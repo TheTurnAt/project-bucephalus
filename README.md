@@ -12,6 +12,15 @@ Include:
 - self improving skill files based on task
 - self improving
 - loop exiting
+- add a librarian agent
+- get a CoT log
+
+How the coordination typically works
+1.  Context Model monitors project states and detects knowledge gaps (or opportunities).
+2.  It formulates a precise request to the Librarian (“Bring high-signal recent info on X that affects Project A’s decision Y, prefer primary sources, score for novelty and relevance”).
+3.  Librarian retrieves, filters, deduplicates, summarizes, and tags the material.
+4.  Context Model injects the distilled results into the relevant project context(s), updates the shared memory, and may trigger follow-up actions.
+5.  Optionally, the Librarian maintains project-specific “shelves” or indexes so future retrievals are faster and more precise.
 
 dev/diagnostic tools:
 - dashboard which tracks all the agents you have running
