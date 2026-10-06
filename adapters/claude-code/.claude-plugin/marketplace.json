@@ -1,0 +1,11 @@
+{
+  "name": "theturn-agents",
+  "owner": { "name": "The Turn At" },
+  "plugins": [
+    {
+      "name": "core",
+      "source": "./plugins/core",
+      "description": "Stage 1: manager, coder, and reviewer agents with delegation, handoff, shared-context, status-report, and STE writing skills"
+    }
+  ]
+}

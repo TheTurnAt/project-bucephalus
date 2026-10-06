@@ -1,0 +1,25 @@
+# Copy this file to context.yml and fill in your values.
+# context.yml is where this project's live context lives: the shared-context
+# MCP server, and the local path to each repo an agent might touch.
+# Do not commit context.yml if any value in it is sensitive.
+
+openlore:
+  # MCP server that exposes the team's shared knowledge to agents.
+  mcp_url: https://openlore.onrender.com
+  system_map: /turnat/system-map.md
+  known_issues: /turnat/known-issues/
+  decisions: /turnat/decisions/
+  inbox: /inbox/
+
+# Local folder that holds all the repos below, one per subdirectory.
+root_path: /Users/you/Projects
+
+repos:
+  - name: backend
+    path: theturnat-backend
+  - name: resident-app
+    path: theturnat-resident
+  - name: vendor-app
+    path: theturnat-vendor
+  - name: admin
+    path: theturnat-admin
